@@ -16,13 +16,12 @@ public:
             int cnt=0;
 
         for(int j=0;j<n;j++){                
-            if(nums[j]>queries[i]) break;
+            if(nums[j]>queries[i]){
                
-                
-                 
-            
-          cnt++;
-        
+                break;
+            }
+             cnt++;
+          
         }
          answer[i]=cnt;
 
