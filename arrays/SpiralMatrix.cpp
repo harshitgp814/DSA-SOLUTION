@@ -3,7 +3,7 @@
  *
  * SpiralMatrix
  * 
- * Difficulty: Level
+ * Difficulty: medim 54
  * Category: undefined
  * Runtime: N/A
  * Memory: N/A
