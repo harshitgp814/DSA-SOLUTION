@@ -1,5 +1,5 @@
 /*
- * @lc app=leetcode id=1738614214 lang=cpp
+ * @lc app=leetcode id=1739193019 lang=cpp
  *
  * RemoveDuplicatesFromSortedArray
  * 
@@ -18,11 +18,12 @@ public:
         if (nums.empty()) return 0;
 
         int i = 0;
-        for (int j = 1; j < nums.size(); j++) {
+        for (int j = i+1; j < nums.size(); j++) {
             if (nums[j] != nums[i]) {
                 i++;
                 nums[i] = nums[j];
             }
+           
         }
         return i + 1;  // Number of unique elements
     }
