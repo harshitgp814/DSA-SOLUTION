@@ -19,14 +19,17 @@
  */
 class Solution {
 public:
-    void deleteNode(ListNode* target) {
-//         Input: head = [4,5,1,9], target = 1
-// Output: [4,5,9]
-  target->val=target->next->val;
-  target->next=target->next->next;
+    void deleteNode(ListNode* node) {
+        ListNode*prev = NULL;
+
+        while(node!=NULL && node->next!=NULL){
+            node->val = node->next->val;
+            prev = node;
+            node=node->next;
 
 
-        
-
+        }
+        prev->next = NULL;
+        delete(node);
     }
 };
